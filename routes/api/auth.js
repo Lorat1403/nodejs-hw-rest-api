@@ -28,4 +28,6 @@ router.get("/current", authenticate, ctrlWrapper(ctrl.getCurrent));
 
 router.post("/logout", authenticate, ctrlWrapper(ctrl.logout));
 
+router.patch("/", authenticate, ctrlWrapper(ctrl.changeSubscription));
+
 module.exports = router;

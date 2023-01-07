@@ -33,7 +33,7 @@ router.patch("/", authenticate, ctrlWrapper(ctrl.changeSubscription));
 router.patch(
   "/avatars",
   authenticate,
-  upload.single("avatars"),
+  upload.single("avatar"),
   ctrlWrapper(ctrl.updateAvatar)
 );
 

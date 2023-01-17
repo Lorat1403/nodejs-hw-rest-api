@@ -1,7 +1,6 @@
 const bcrypt = require("bcrypt");
 const gravatar = require("gravatar");
 const { nanoid } = require("nanoid");
-require("dotenv").config();
 
 const { User } = require("../../models/user");
 

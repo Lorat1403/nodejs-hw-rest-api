@@ -2,8 +2,6 @@ const { User } = require("../../models/user");
 
 const { httpError, sendEmail } = require("../../helpers");
 
-require("dotenv").config();
-
 const { BASE_URL } = process.env;
 
 const resendVerifyEmail = async (req, res) => {
